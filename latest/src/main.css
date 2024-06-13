@@ -1,0 +1,29 @@
+/*Se indica la paleta de colores a utilizar con la respectiva letra*/
+:root {
+  --primario: #1d324d;
+  --secundario: #457373;
+  --secundario-oscuro: #7c4935;
+  --fondo: #fff;
+  --font-family-base: sans-serif, Arial, Helvetica;
+}
+/*Se settean los valores principales de las páginas*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: var(--font-family-base);
+  background-color: var(--fondo);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}

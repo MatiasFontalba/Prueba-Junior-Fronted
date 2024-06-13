@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Prueba Junior Front End</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!--Se implementa el panel a utilizar-->
+      <wc-tab-panel>
+        <h1 slot="tab">Articulos</h1>
+        <!--Se agrega el elemento customizado para listar todos los articulos-->
+        <div slot="content"><custom-list></custom-list></div>
+        <h1 style="display: none" slot="tab"></h1>
+        <!--Se agrega el elemento que busca el autor con su 
+        información respectiva según el articulo seleccionado-->
+        <div slot="content"><element-author></element-author></div>
+        <h1 style="display: none" slot="tab"></h1>
+        <!--Se agrega el elemento customizado para mostrar solo 
+        un articulo con todos los datos respectivos-->
+        <div slot="content"><element-article></element-article></div>
+      </wc-tab-panel>
+    </main>
+    <!--Se importan todos los componentes necesarios para el 
+    funcionamiento de la página web-->
+    <script src="./components/lista.js" type="module"></script>
+    <script src="./components/tab-panel.js" type="module"></script>
+    <script src="./components/element-article.js" type="module"></script>
+    <script src="./components/virtual-tab.js"></script>
+    <script src="./components/author.js" type="module"></script>
+  </body>
+</html>
